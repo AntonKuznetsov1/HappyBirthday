@@ -10,22 +10,52 @@ body {
 }
 
 /* Container styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw; /* Ensures full width */
+    margin: 0; /* Remove unwanted space */
+    padding: 0; /* Prevent shifting */
+}
+
 .container {
     display: grid;
     grid-template-areas: 
-        "title title title"
-        "wishes wishes image"
-        "button button button";
-    gap: 20px;
+        "title"
+        "wishes"
+        "image"
+        "button";
     padding: 30px;
-    padding-right: 15px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
     max-width: 600px;
-    margin: auto;
+    
+    /* Perfect Centering Fix */
+    margin: auto; /* Centers horizontally */
+    align-items: center;
+    justify-items: center;
 }
+
+/* Image Fix */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ensure Button Stays Centered */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* Title styling */
 .title {
@@ -69,6 +99,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
+    padding-right: 0;
+    margin-right: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Button styling */
@@ -123,4 +156,3 @@ body {
         font-size: 22px; /* Slightly smaller */
     }
 }
-
