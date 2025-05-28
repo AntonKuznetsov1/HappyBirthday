@@ -18,6 +18,7 @@ body {
         "button button button";
     gap: 20px;
     padding: 30px;
+    padding-right: 15px;
     background: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -120,9 +121,6 @@ body {
 @media (max-width: 600px) {
     .title {
         font-size: 22px; /* Slightly smaller */
-    }
-    .container{
-        max-padding-right: 10px;
     }
 }
 
