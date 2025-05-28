@@ -121,5 +121,8 @@ body {
     .title {
         font-size: 22px; /* Slightly smaller */
     }
+    .container{
+        max-padding-right: 10px;
+    }
 }
 
